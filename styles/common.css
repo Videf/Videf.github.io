@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #1a0b1d; 
+    color: #FFF5E1;
+    max-width: 100%;
+    overflow-x:clip;
+    /*#0c0711*/
+}
+main{ 
+    font-family: "Montserrat",sans-serif;
+    max-width: clamp(61.8%,80em,100vw);
+    overflow-x:clip;
+    margin: 0px auto;
+    background-color: #35233b;
+    padding-bottom: 5em;
+}
+
+main h1{
+    background-color: #2d0f25;
+    padding: clamp(1em,2vw,2em);
+}

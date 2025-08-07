@@ -1,0 +1,114 @@
+main{
+    color: #FFF5E1;
+}
+
+hr{
+    color: #C80036;
+    border-style: dashed;
+    width: 50%;
+    margin-left: 0px;
+}
+
+.project-preview{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 1vw 0px;
+}
+
+.page-button{
+    display: block;
+    width: max-content;
+    padding: 1em 1.5em;
+    
+    border-radius: 16px;
+    background-color: #2d0f25;
+    margin: 1vw;
+    transition: all 0.1s ease-in-out 0s;
+}
+.page-button:hover{
+    background-color: #C80036;
+}
+
+.project-preview *{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.project-header{
+    background-color: #2d0f25;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.project-header h1{
+    width: 100%;
+    margin: 0%;
+    height: auto;
+    align-self: flex-start;
+}
+
+.project-header a{
+    display: inline-flex;
+    border: 0.2em solid #FFF5E1;
+    border-radius: 16px;
+    padding: 1.5em 2em;
+    margin: 1em;
+    margin-left: 0px;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.project-header a:hover{
+    border-color: #C80036;
+    color: #C80036;
+}
+
+@media screen and (min-width:600px){
+.abstract{
+    display: flex;
+}
+}
+@media screen and (max-width:600px){
+    .abstract{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.project-info{
+    min-width: 33%;
+    border-radius: 16px;
+    padding: 2em 2em;
+    padding-top: 1em;
+    margin: 10px;
+    background-color: #2d0f25;
+    
+}
+
+
+
+.project-info.alternate{
+    background-color: #C80036
+}
+
+.project-info ul{
+    list-style: none;
+    padding: 5px;
+}
+
+.project-info ul li{
+    display: flex;
+    
+    width: max-content;
+    height: fit;
+    margin: 0px;
+}
+
+ul li .icon{
+    width: 1.5em;
+    margin: 0.33em 1em;
+}
+ul li p{
+    margin: auto 0.1em;
+}
