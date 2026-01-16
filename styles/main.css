@@ -20,6 +20,7 @@
         margin: 1em;
         margin-top: auto;
         margin-bottom: auto;
+        line-height: 1.2em;
     }
 }
 /* Mobile*/
@@ -38,6 +39,7 @@
         height: fit-content;
         margin-top: 1em;
         margin-bottom: 1em;
+        line-height: 1.2em;
         
     }
 }

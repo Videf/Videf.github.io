@@ -21,7 +21,7 @@
 
         <div class="project-header">
             <h1>Marching Cubes</h1>
-            <a href="https://github.com/Videf/TerrariaClone" target="_blank">GitHub</a>
+            <a href="https://github.com/Videf/Marching_Cubes" target="_blank">GitHub</a>
         </div>
         <div class="abstract"> 
             <div class="project-info">
@@ -57,9 +57,23 @@
             <h2>What I Learned</h2>
             <hr>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                The goal of this project was primarily to learn how to marching cubes algorithm works, and how to implement it in a real game engine. 
+                After I had researched the algorithm and implemented a basic version of it, I realised that there were some problems to fix to make the algorithm work in a realtime game.<br>
+                First off, the algorithm for the generation and the marching cubes algorithm were to slow, and would cause lag spikes whenever a new chunk of terrain was generated, or whenever an old chunk was updated. 
+                To make this problem less noticable I decided to multithread the marching cubes code using <strong>Unity's job system</strong>. 
+                Since the chunks didn't need to be ready the very next frame, the chunks just needed to load in faster than the player could move.<br>
+                Secondly, there was a big memory problem. Generating new chunk data and their meshes created a lot of garbage. 
+                To solve this problem, I implemented object-pooling to make sure the process didn't create more garbage than needed. <br>
+                There is still room for improvement on this project. There is currently no normal smoothing, which gives the terrain a very low-poly feel. Secondly, the world generation currently only consists of a perlin noise heightmap. 
+                A lot could done here to make the terrain more interesting, such as adding continents and landmarks, or using 3D noise to create caves.
+                <br><br>
+                <strong>In summary</strong>, this project made me learn more about:
+                <ul>
+                    <li>- Mesh generation</li>
+                    <li>- Garbage collection management</li>
+                    <li>- Multithreading with Unity's Job System</li>
+                    <li>- Procedural terrain generation</li>
+                </ul>
             </p>
         </div>
         
