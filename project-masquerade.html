@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project</title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/project-page.css">
+        
+        <script src="components/header.js" type="text/javascript" defer></script>
+    </head>
+    <header-component></header-component>
+    <main>
+        
+        <div class="project-preview">
+            <video src="videos/masquerade_gameplay.mkv" type="video/mp4" autoplay controls></video>
+        </div>
+
+        <a class="page-button" href = "index.html">Back</a>
+
+        <div class="project-header">
+            <h1>Masquerade</h1>
+            <a href="https://red-voxel.itch.io/masquerade" target="_blank">Itch.io</a>
+        </div>
+        <div class="abstract"> 
+            <div class="project-info">
+                <h2>About</h2>
+                <hr>
+                <p>
+                    You have been invited to a grand masquerade.
+                    Among the guests, there is one intruder.
+                    Find them, and unmask them before they complete their objectives.
+                    Sever their strings.
+
+                    This game was made together with 3 artists/animators in 48 hours for the Global Game Jam. 
+                    Since we all have artistic experience, the focus of this game jam was to create an interesting visual experience rather than a "fun" game. 
+
+
+                    
+                </p>
+            </div>
+            <div class="project-info alternate">
+                <h2>Info</h2>
+                <ul>
+                    <li><img class="icon" src="icons/calendar-solid.svg"><p>Made in: 2026</p></li>
+                    <li><img class="icon" src="icons/circle-user-solid.svg"><p>Role: Programmer, Artist</p></li>
+                    <li><img class="icon" src="icons/users-solid.svg"><p>Group size: 4</p></li>
+                    <li><img class="icon" src="icons/clock-solid.svg"><p>Time frame: 48 Hours</p></li>
+                    <li><img class="icon" src="icons/gear-solid.svg"><p>Engine: Unity (C#)</p></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="project-info">
+            <h2>What I Worked On</h2>
+            <hr>
+            <ul>
+                <li> - Many of the pixel-art textures</li>
+                <li> - All gameplay programming and NPC AI</li>
+                <li> - Level building</li>
+            </ul>
+        </div>
+        <div class="project-info">
+            <h2>Process</h2>
+            <hr>
+            My role in this project was mainly leading the project, developing all gameplay systems, and providing pixel-art and artistic technical guidance. 
+            Our main artistic vision for this game was for it to simulate the look of a 2D pixel art game. 
+            This meant that we used no in-engine lighting, and instead provided this through texturing. To achieve the pixelated look, we downscaled the render output to a lower resolution. This had an unintended side-effect of blurring colors together and creating new ones that didn't exist in our color pallette. While this was unwanted for our art-style, it worked for the gameplay, obscuring farther areas of the map and creating an air of mystery.
+            <br>
+            In the end, the game ended up very simple, with a lot of janky parts (and bugs that I wish I had time to fix!), especially how the NPCs collide with each other. However, while the gameplay is imperfect, I'm very happy how this project turned out considering the time limit.
+        </div>
+        
+        
+    </main>
+</html>

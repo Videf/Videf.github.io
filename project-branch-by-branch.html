@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project</title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/project-page.css">
+        
+        <script src="components/header.js" type="text/javascript" defer></script>
+    </head>
+    <header-component></header-component>
+    <main>
+        
+        <div class="project-preview">
+            <video src="videos/branchbybranch_gameplay.mp4" type="video/mp4" autoplay controls></video>
+        </div>
+
+        <a class="page-button" href = "index.html">Back</a>
+
+        <div class="project-header">
+            <h1>Branch by Branch</h1>
+            <a href="https://starskoot.itch.io/branch-by-branch" target="_blank">Demo</a>
+        </div>
+        <div class="abstract"> 
+            <div class="project-info">
+                <h2>About</h2>
+                <hr>
+                <p>
+                    'Branch by Branch' was initially started as my last course project. This game was nominated for the SAGA-award (Skövde Academic Game Award)! 'Branch by Branch' is a game where you climb up an impossibly tall tree, by building your path with wooden planks. All the way up to the moon - branch by branch.
+                </p>
+            </div>
+            <div class="project-info alternate">
+                <h2>Info</h2>
+                <ul>
+                    <li><img class="icon" src="icons/calendar-solid.svg"><p>Ongoing</p></li>
+                    <li><img class="icon" src="icons/circle-user-solid.svg"><p>Role: Programmer, 2D-Artist</p></li>
+                    <li><img class="icon" src="icons/users-solid.svg"><p>Group size: 4</p></li>
+                    <li><img class="icon" src="icons/clock-solid.svg"><p>Time frame: 12 weeks</p></li>
+                    <li><img class="icon" src="icons/gear-solid.svg"><p>Engine: Unity (C#)</p></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="project-info">
+            <h2>What I Worked On</h2>
+            <hr>
+            <ul>
+                <li> - Implementation of UI elements</li>
+                <li> - Tools for building the level</li>
+                <li> - Inventory</li>
+                <li> - Parts of the first person player controller</li>
+                <li> - All 2D assets</li>
+            </ul>
+        </div>
+        <div class="project-info">
+            <h2>Tree Builder - The level editor tool</h2>
+            <hr>
+            <p>
+                For 'Branch by Branch' we quickly realised that building the level was going to be difficult. The whole level is one large tree, with many parts stacked on top of each other. 
+                This meant that if we wanted to insert something in the middle of the tree, everything above it needed to be moved as well. 
+                This substantially slowed down iteration time for the level design, and was a problem that needed to be solved.
+                <br> 
+                So that's what I did!
+                <br>
+                To solve this issue, I created a level editor for the sole purpose of creating a large tree - a tool called 'Tree Builder' (A very creative name indeed!).
+                <br>
+                The finished tool looked like this: 
+            </p>
+            <img src="images/tree_builder_screenshot.png" alt="A screenshot of how the tool looked">
+            <p>
+                The level consisted of three types of parts: <strong>'Trunks'</strong>, <strong>'Branches'</strong>, and <strong>'Leaves'</strong>. The tree was segmented into different <strong>trunk parts</strong> where each <strong>trunk</strong> owns a number of <strong></strong>branches</strong>, and each <strong>branch</strong> owns a number of leaves, placed where the branches end.
+            </p>
+            <img src="images/tree_builder_planning.png" alt="A sketch of how the tree builder parts looks.">
+            <p>
+                To solve the initial design problem, the tool allows for the designer to freely move around these different segments, which in turn automatically updates the rest of the tree. The tool also allows for adding, removing, replacing and inserting different parts. To make this inuitive for the user of the tool, the user can either use the tool's UI, or simply delete a segment in the <strong>Unity</strong> scene view. The tool can detect this, and automatically updates the rest accordingly.
+            </p>
+        </div>
+        <div class="project-info">
+            <h2>The Branches</h2>
+            <hr>
+            <p>
+                Since the game was built around climbing branches, we needed a way to construct a lot of them with different variations. To solve this I created another tool. This tool used <strong>Unity's</strong> spline system as a base for editing the branches, and simply constructed the new branch mesh around the spline skeleton.
+            </p>
+            <img src="images/spline_extruder_screenshot.png" alt="A screenshot of the early progress of the branch editor">
+            <p>
+                The mesh was constructed as rings of vertices, extruded a certain distance from the spline skeleton. The rings are shown in the screenshot above, with red lines pointing out to each vertex. These vertices were then connected by triangles, forming the final mesh. By changing the distance of the vertices from skeleton, the branches could get thinner further out. Furthermore, by applying noise to the extruded distance, a more natural appearence could be achieved.
+            </p>
+        </div>
+        
+        <div class="project-info">
+            <h2>What I Learned</h2>
+            <hr>
+            <ul>
+                <li> - How to build tool that actually help save time</li>
+                <li> - Complex procedural mesh generation</li>
+                <li> - UI Design and using different methods to make it efficient.</li>
+            </ul>
+        </div>
+        
+        
+    </main>
+</html>
