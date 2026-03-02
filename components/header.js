@@ -67,7 +67,7 @@ class Header extends HTMLElement {
 
         <header>
             <a class="logo" href="index.html">
-                <img  src="images/logoSmall.png" alt="logo">
+                <img  src="images/vide_franden_logo.png" alt="logo">
             </a>
             <nav>
                 <ul class="nav_links">
