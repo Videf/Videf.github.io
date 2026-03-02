@@ -73,7 +73,7 @@ class Header extends HTMLElement {
                 <ul class="nav_links">
                     <li><a href="https://www.linkedin.com/in/vide-fr%C3%A4nd%C3%A9n-ba93a032b/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://red-voxel.itch.io/" target="_blank">Itch.io</a></li>
-                    <li><a href="CV/Vide_Franden_cv-2025.pdf" target="_blank">CV</a></li>
+                    <li><a href="CV/Vide_Franden_cv-2026.pdf" target="_blank">CV</a></li>
                 </ul>
             </nav>
         </header>
